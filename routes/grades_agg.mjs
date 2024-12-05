@@ -19,7 +19,7 @@ const router = express.Router();
  */
 
 // Get the weighted average of a specified learner's grades, per class
-rrouter.get("/learner/:id/avg-class", async (req, res) => {
+router.get("/learner/:id/avg-class", async (req, res) => {
   let collection = await db.collection("grades");
 
   let result = await collection
